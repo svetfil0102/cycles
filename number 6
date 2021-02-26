@@ -1,15 +1,19 @@
+
+number 6
 #include<iostream>
 #include<math>
 using namespace std;
 int main()
 {
-int w, o = 1, g = 1, x, o1;
-cin >> w;
-for ( int f = 1; f <= w; f++)
-{
-x = o + g;
-g = o;
-o = x;
-cout << x << endl;
+    int w, o = 1, g = 1, x, o1;
+    cin >> w;
+    for ( int f = 1; f <= w; f++)
+    {
+        x = o + g;
+        g = o;
+        o = x;
+        cout << x << endl;
+    }
 }
-}
+number 7
+
