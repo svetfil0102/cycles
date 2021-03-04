@@ -1,0 +1,133 @@
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+    float a, b;
+    cin>>a;
+    float x = a, x0 = 0;
+    float eps = 0.00001;
+    while (abs(x-x0))>eps)
+    {
+        x0=0
+        x=(x+a/x)/2;
+    }
+    cout << x << endl;
+    b=sqrt (a);
+    cout << b;
+}
+
+
+
+Номер 5
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+    for (int k = 100; k<=999; k++)
+    {
+        int square = k*k
+        if (square % 1000 ==k)
+        cout << k << endl;
+    }
+}
+
+
+
+
+
+Номер 6
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+    int a, b, c, a1, b1, c1, x, n=3;
+    for (int k= 100; k<=999; k++)
+    {
+        a = k/100;
+        c = k%10;
+        b = k/10%10;
+        x = pow(a,n) + pow(b,n) + pow(c,n);
+        if (k==x)
+        cout << k << endl;
+    }
+}
+
+
+
+Номер 7
+
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+   int a, c = 1, d = 1, x, c1;
+   cin >> a;
+   for  (int b = 1; b <= a; b++)
+   {
+       x = c + d;
+       d = c;
+       c = x;
+       cout << x << endl;
+   }
+}
+
+
+Номер 8
+
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+    int a, c=1,d=1,x,y,c1,n=0;
+    cin >> a;
+    for (int b = 1; b<=a; b++)
+    {
+        cin>>y;
+        for (int k=1; k<=y; k++)
+    {
+        x=c+d;
+        d=c;
+        c=x;
+        if(x==y)
+        n++;
+    }
+    c=1;
+    d=1;
+    }
+    cout << ++n << endl;
+}
+
+
+Номер 9
+
+#include<iostream>
+#include<cmath>
+using manespace std;
+int main()
+{
+    int a, c=1, d=1, x,y,c1, n=0;
+    cin>> a;
+    for (int b=1; b<=a; b++) {
+        cin >> y
+        bool Prime=true;
+        for(int k=2;k<sqrt(y)+1; k++){
+            if (y%k == 0){
+                Prime=false;
+                break;
+            }
+        }
+        if(Prrime==true){
+            n++;
+        
+        }
+    }
+    cout<<n;
+}
+
+
+
