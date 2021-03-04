@@ -1,0 +1,173 @@
+7a
+#include <gtk/grk.h>
+void on_draw_event (GtkWidget *widget, cairo_t *cr, gpointer data)
+{
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=10; y<=90; y+=10){
+     cairo_move_to(cr, 10, y);
+     cairo_line_to(cr, 50, y);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 10, 10);
+     cairo_line_to(cr, 10, 100);
+     cairo_line_to(cr, 50, 100);
+     cairo_line_to(cr, 50, 10);
+     cairo_line_to(cr, 10, 10);
+     ciaro_stroke(cr);
+     
+     int main(int argc, char *argv[]) {
+    GtkWidget *darea;
+    gtk_init(&argc, &argv);
+    window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    darea = gtk_drawing_area_new();
+    gtk_container_add(GTK_CONTAINER(window), darea);
+    gtk_widget_set_events (window, GDK_EXPOSURE_MASK
+          | GDK_LEAVE_NOTIFY_MASK   | GDK_POINTER_MOTION_MASK);
+    g_signal_connect(G_OBJECT(darea), "draw", G_CALLBACK(on_draw_event), NULL); 
+    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);  
+    g_signal_connect(window, "motion_notify_event", G_CALLBACK(onmouse), NULL);
+    gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
+    gtk_window_set_default_size(GTK_WINDOW(window), 5000, 5000); 
+    gtk_window_set_title(GTK_WINDOW(window), "Lines");
+    gtk_widget_show_all(window);
+    gtk_main();
+    return 0;
+    
+    
+    
+    7б
+    cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=50; y<=450; y+=50){
+     cairo_move_to(cr, 50 , 50);
+     cairo_line_to(cr, y, 400);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 50, 50);
+     cairo_line_to(cr, 50, 400);
+     cairo_line_to(cr, 450, 100);
+     cairo_line_to(cr, 50, 50);
+     ciaro_stroke(cr);
+     
+     
+     
+     7в
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=50; y<=400; y+=50){
+     cairo_move_to(cr, 50, 450);
+     cairo_line_to(cr, 400, y);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 50, 450);
+     cairo_line_to(cr, 400, 450);
+     cairo_line_to(cr, 400, 50);
+     cairo_line_to(cr, 50, 450);
+     ciaro_stroke(cr);
+     
+     
+     
+     7г
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=50; y<=400; y+=50){
+     cairo_move_to(cr, 50, y);
+     cairo_line_to(cr, 500, 500-y);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, ,0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 50, 50);
+     cairo_line_to(cr, 500, 450);
+     cairo_line_to(cr, 500, 50);
+     cairo_line_to(cr, 50, 450);
+     cairo_line_to(cr, 50, 50);
+     ciaro_stroke(cr);
+     
+     7д
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=50; y<=400; y+=50){
+     cairo_move_to(cr, 250, 50);
+     cairo_line_to(cr, y, 400);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, ,0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 50, 400);
+     cairo_line_to(cr, 450, 400);
+     cairo_line_to(cr, 250, 50);
+     cairo_line_to(cr, 50, 400);
+     ciaro_stroke(cr);
+     
+     7е
+     cairo_set_source_rgb(cr, 1, 0, 0);
+     cairo_set_line_width (cr, 1);
+     for(int y=100; y<=450; y+=10){
+     cairo_move_to(cr, 50, y);
+     cairo_line_to(cr, 400, (y/2)+137.5);
+     cairo_stroke_precerve(cr);
+     cairo_set_source_rgb(cr, 1, 0, ,0);
+     caoiro_fill(cr);
+     }
+     cairo_move_to(cr, 50, 50);
+     cairo_line_to(cr, 162.5, 400);
+     cairo_line_to(cr, 387.5, 400);
+     cairo_line_to(cr, 500, 50);
+     cairo_line_to(cr, 50, 50);
+     ciaro_stroke(cr);
+     
+     4 номер
+     
+#include <cstdlib>  
+#include <iostream> 
+ 
+using namespace std;    
+ 
+int main()  
+{   
+    
+    int a=8, 
+        b=8,  
+        c=0;  
+        
+   for(c;c<=7;c++)   
+   {   
+        if(c%2==0)  
+        {   
+            while(a!=0) 
+            {   
+                cout<<"* "; 
+                a--;    
+            }  
+            a=8;    
+            cout<<"\n"; 
+        }   
+        else    
+        {   
+            cout<<" ";  
+            while(b!=0) 
+            {   
+                cout<<"* "; 
+                b--;   
+            }   
+            b=8;    
+            cout<<"\n"; 
+        }  
+    }   
+    system("pause");    
+    return 0;  
+} 
+     
+     
+     
+     
+     
+     
