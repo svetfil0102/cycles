@@ -1,0 +1,317 @@
+Номер 10
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+   
+    bool x = false;
+    if (a < 0)
+        x = true;
+    if (b < 0)
+        x = true;
+    if (c < 0)
+        x = true;
+   
+    if (x)
+        cout << "Среди введенных чисел есть отрицательные";
+    else
+        cout << "Отрицательных чисел нет";
+   
+}
+
+11.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+   
+    bool x = false;
+    if ((a >= 10 and a <= 99) and (b >= 10 and b <= 99) and (c >= 10 and c <= 99))
+        x = true;
+    ;
+   
+    if (x)
+        cout << "Все числа двузначные";
+    else
+        cout << "Не все числа двузначные";
+   
+}
+
+12.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+   
+    bool x = false;
+    if ((a + b) >= 25)
+        x = true;
+    if ((a + c) >= 25)
+        x = true;
+    if ((b + c) >= 25)
+        x = true;
+   
+    if (x)
+        cout << "Соединить можно";
+    else
+        cout << "Соединить нельзя";
+   
+}
+
+16.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+   
+    bool x = false;
+    if ((a%10 == 1) or (b%10 == 1) or (c%10 == 1))
+        x = true;
+   
+    if (x)
+        cout << "Хотя бы одно число оканчивается на 1";
+    else
+        cout << "Ни одно из чисел не оканчивается на 1";
+   
+}
+
+17.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin >> a;
+    a <= 120;
+   
+    if (a%10 == 1){
+        if (a == 11)
+            cout << a << " " << "лет";
+        else
+            cout << a << " " << "год";
+       
+    }
+   
+    else if ((a%10 == 2) or (a%10 == 3) or (a%10 == 4)){
+        if (a == 12 or a == 13 or a == 12)
+            cout << a << " " << "лет";
+        else
+            cout << a << " " << "года";
+   
+    }
+    else
+        cout << a << " " << "лет";
+   
+   
+}
+
+19a.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x, y;
+    cout >> x >> y;
+    if (y < 1)
+        cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+19b.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x, y;
+    cin >> x >> y;
+    if (y <= -x)
+        cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+19c.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if ((y*y + x*x) <= 1)
+        cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+19d.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if ((x - 1)*(x - 1) + y*y <= 1)
+        cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+
+20a.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x, y;
+    cin >> x >> y;
+    if ((y <= x) and ((x*x + y*y) >= 4))
+        cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+
+20b.
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int x, y;
+    cout >> x >> y;
+    if (y <= sin(x))
+        if (y <= 0.5)
+            if (y >= 0)
+                cout << "Точка принадлежит заштрихованной плоскости.";
+            else
+                cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+20c.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cout >> x >> y;
+    if (y >= x)
+        if (y >= 0)
+            if (y <= (2 - x*x))
+                cout << "Точка принадлежит заштрихованной плоскости.";
+            else
+                cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+
+20г.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if (y <= x)
+        if (y <= -x)
+            if (y >= x*x -2)
+                cout << "Точка принадлежит заштрихованной плоскости.";
+            else
+                cout << "Точка не принадлежит заштрихованной плоскости.";
+}
+
+20д.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if ((x*x + y*y) <= 1)
+        if (y <= 0)
+            cout << "Точка принадлежит заштрихованной плоскости.";
+        else if (y >= x)
+            cout << "Точка принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости";
+}
+
+20е.
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if (x > 0)
+        if (y <= -x and y >= x)
+            cout << "Точка не принадлежит заштрихованной плоскости.";
+        else
+            cout << "Точка принадлежит заштрихованной плоскости.";
+    cout << "Точка не принадлежит заштрихованной плоскости";
+}
+
+20ж.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if (y >= (1 - x))
+        if (x <= 1)
+            if (y >= 2*x*x)
+                cout << "Точка принадлежит заштрихованной плоскости.";
+            else
+                cout << "Точка не принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости";
+}
+
+20з.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if ((x*x + y*y) <= 1)
+        if (x <= 0)
+            if (y <= 1)
+                if (y >= (x - 1))
+                    cout << "Точка принадлежит заштрихованной плоскости.";
+                else
+                    cout << "Точка не принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости";
+}
+
+20и.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x, y;
+    cin >> x >> y;
+    if (y <= 1)
+        if (x <= 1)
+            if ((x*x + y*y) <= 1)
+                cout << "Точка принадлежит заштрихованной плоскости.";
+            else
+                cout << "Точка не принадлежит заштрихованной плоскости.";
+    else
+        cout << "Точка не принадлежит заштрихованной плоскости";
+}
